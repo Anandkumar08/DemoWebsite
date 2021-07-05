@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+    </meta>
+
+    <title>Web Series Wallet</title>
+    <!--LINK CSS-->
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <!--LINK JQUERY-->
+    <script type="text/javascript" src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(45deg, #ed3a3a, #197ebe);
+            margin: 0;
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .navbar {
+            margin-top: 20px;
+        }
+        
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 10px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+        
+        .btn {
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .info {
+            border-color: #2196F3;
+            color: dodgerblue
+        }
+        
+        .info:hover {
+            background: #2196F3;
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        < !-- -------------------------------------------------------- -->.navbar-collapse li:hover {
+            background-color: black;
+            color: black;
+        }
+        
+        sidemenu:hover {
+            color: black;
+            background: #ddd;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <nav class="navbar navbar-inverse" style="width:98%">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a href="index.html" class="navbar-brand">Web Series Wallet</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="float: right;">
+                <li class="active"><a href="index.html">Home</a></li>
+                <!-- <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Movies <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="bollywood.html">Bollywood</a></li>
+            <li><a href="hollywood.html">Hollywood</a></li>
+            <li><a href="south.html">South</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Short Films</a></li>
+          </ul>
+        </li> -->
+                <li><a href="Web-Series.html">Web Series</a></li>
+                <li><a href="videos.html">Videos</a></li>
+
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="tags" placeholder="Search">
+                        <span class="input-group-btn">
+							<button type="button" onclick="disableSearch();" id="mySearch" class="btn btn-info"><span
+									class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <div class="icon-bar" style="position: fixed;top: 23%;">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-instagram"></i></a>
+  <a href="https://youtube.com/c/anandhackie" class="youtube"><i class="fa fa-youtube"></i></a>
+</div> -->
+    <div class="container" style="width:97%">
+
+        <hr>
+        <ul class="breadcrumb">
+            <li class="active"><a href="index.html">Home</a></li>
+        </ul>
+
+        <div class="row">
+
+            <div class="col-sm-9">
+                <!--         <div class="demo-content bg-alt">
+			<Strong>Recently Added Movies</strong>
+        </div> -->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="cursor: pointer;">
+                        <Strong>Recently Added Web Series</strong>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" style="text-align: center">
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/Modi-Journey-Of-A-Common-Man.jpg" target="_blank">
+                                        <img src="./images/Modi-Journey-Of-A-Common-Man.jpg" alt="Modi: Journey of A Common Man">
+                                        <div class="caption">
+                                            <p>Modi: Journey of A Common Man</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/Kota Factory.jpg" target="_blank">
+                                        <img src="./images/Kota Factory.jpg" alt="KOTA FACTOR">
+                                        <div class="caption">
+                                            <p>Kota Factory</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/Criminal Justice.webp" target="_blank">
+                                        <img src="./images/Criminal Justice.webp" alt="Criminal Justice">
+                                        <div class="caption">
+                                            <p>Criminal Justice</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/mirzapur.jpeg" target="_blank">
+                                        <img src="./images/mirzapur.jpeg" alt="Mirzapurs">
+                                        <div class="caption">
+                                            <p>Mirzapurs</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/city of dreams.jpg" target="_blank">
+                                        <img src="./images/city of dreams.jpg" alt="City of Dreams">
+                                        <div class="caption">
+                                            <p>City of Dreams</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/karenjit.jpg" target="_blank">
+                                        <img src="./images/karenjit.jpg" alt="Karenjit Kaur">
+                                        <div class="caption">
+                                            <p>Karenjit Kaur</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <a href="#" style="float:right;margin-right:15px;">More </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="cursor: pointer;">
+                        <Strong>Popular in
+							Comedy&nbsp;<span>/</span>&nbsp;Drama&nbsp;</strong>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/ImMature.jpg" target="_blank">
+                                        <img src="./images/ImMature.jpg" alt="ImMature">
+                                        <div class="caption">
+                                            <p>ImMature</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/inmates.jpg" target="_blank">
+                                        <img src="./images/inmates.jpg" alt="Inmates">
+                                        <div class="caption">
+                                            <p>Inmates</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/Kota Factory.jpg" target="_blank">
+                                        <img src="./images/Kota Factory.jpg" alt="KOTA FACTOR">
+                                        <div class="caption">
+                                            <p>Kota Factory</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/permanent roomates season 1.jpg" target="_blank">
+                                        <img src="./images/permanent roomates season 1.jpg" alt="Permanent Roommates 1">
+                                        <div class="caption">
+                                            <p>Permanent Roommates 1</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/Maaya.jpg" target="_blank">
+                                        <img src="./images/permanent roomates season 2.jpg" alt="Permanent Roommates 2">
+                                        <div class="caption">
+                                            <p>Permanent Roommates 2</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="thumbnail">
+                                    <a href="./images/medicallyYours.jpeg" target="_blank">
+                                        <img src="./images/medicallyYours.jpeg" alt="Medically Yourrs">
+                                        <div class="caption">
+                                            <p>Medically Yourrs</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- <br>
+							<a href="#" style="float:right;margin-right:15px;">More </a> -->
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <Strong>Popular in Adult 18+</strong>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" style="text-align: center">
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a href="./images/medicallyYours.jpeg" target="_blank">
+                                        <img src="./images/medicallyYours.jpeg" alt="Medically Yourrs">
+                                        <div class="caption">
+                                            <p>Medically Yourrs</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a href="./images/kaushiki-2.jpg" target="_blank">
+                                        <img src="./images/kaushiki-2.jpg" alt="kaushiki">
+                                        <div class="caption">
+                                            <p>Kaushiki</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a href="./images/Lust-stories1.jpg" target="_blank">
+                                        <img src="./images/Lust-stories1.jpg" alt="Lust Stories">
+                                        <div class="caption">
+                                            <p>Lust Stories</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a href="./images/Dev DD.jpg" target="_blank">
+                                        <img src="./images/Dev DD.jpg" alt="Dev DD">
+                                        <div class="caption">
+                                            <p>Dev DD</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 
+							<br>
+							<a href="#" style="float:right;margin-right:15px;">More </a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 		<div class="demo-content bg-alt">
+			<Strong>Popular in Romance</strong>
+        </div>
+		<div class="demo-content bg-alt">
+			<Strong>Anime</strong>
+		</div> -->
+            </div>
+            <!-- End of Col-sm-9 -->
+
+            <div class="col-sm-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background: #333;color: white; cursor: pointer;">
+                        <Strong>Recently Added
+							Trailers</strong>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="" style="margin:1% 1% 1% 5%; list-style-type:square;">
+                            <!-- list-style-type:square; -->
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <!-- <a href="#" style="float:right">More </a>
+							<br> -->
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="panel panel-default">
+                    <div class="panel-heading sidemenu" style="background: #333;color: white; cursor: pointer;">
+                        <Strong>Recent
+							Added Video</strong>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="" style="margin:1% 1% 1% 5%">
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <li><a href="#">Coming Soon </a></li>
+                            <!-- <a href="#" style="float:right">More </a>
+							<br> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Of ROW -->
+        <hr>
+
+    </div>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Adults</a></li>
+                        <li><a href="">Romance</a></li>
+                        <li><a href="">Drama</a></li>
+                        <li><a href="">Action</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="./Web-Series.html">Web Series</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+                        <a href="#">Anand Hackie</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
